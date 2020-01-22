@@ -31,7 +31,7 @@ parser.add_argument('--dis', default=0,
                     help='self distillation?')
 args = parser.parse_args()
 
-if args.dis:
+if np.int(args.dis):
     save_name='dis'
     criterion = loss.InterpolationLoss3()
     print('start train with distillation')
