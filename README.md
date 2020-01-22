@@ -31,4 +31,6 @@ We calculate $\Delta$ as:
 $\Delta=\frac{|y_i^{low}|}{|y_i^{low}|+|y_i^{high}|}$
 # Main result
 We can observe self-distillation > earlystopping, but we can not observe too much different on frequency domain.
-
+![accuracy](https://github.com/lizhemin15/self-distillation/blob/master/acc.png)
+![frequency](https://github.com/lizhemin15/self-distillation/blob/master/frequency.png)
+![loss](https://github.com/lizhemin15/self-distillation/blob/master/loss.png)
