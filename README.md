@@ -3,7 +3,9 @@ self-distillation
 
 Ref:
 [1]Dong, B., Hou, J., Lu, Y., & Zhang, Z. (2019). Distillation $\approx$ Early Stopping? Harvesting Dark Knowledge Utilizing Anisotropic Information Retrieval For Overparameterized Neural Network. 1–22. Retrieved from http://arxiv.org/abs/1910.01255
+
 [2]Jacot, A., Gabriel, F., & Hongler, C. (2018). Neural tangent kernel: Convergence and generalization in neural networks. Advances in Neural Information Processing Systems, 2018-Decem(5), 8571–8580.
+
 [3]Xu, Z.-Q. J., Zhang, Y., Luo, T., Xiao, Y., & Ma, Z. (2019). Frequency Principle: Fourier Analysis Sheds Light on Deep Neural Networks. Retrieved from http://arxiv.org/abs/1901.06523
 
 I'm trying to analysis why distillation > early stopping in frequency domain. All the codes are based on pytorch.
@@ -31,6 +33,10 @@ We calculate $\Delta$ as:
 $\Delta=\frac{|y_i^{low}|}{|y_i^{low}|+|y_i^{high}|}$
 # Main result
 We can observe self-distillation > earlystopping, but we can not observe too much different on frequency domain.
+In these pics, dis_ means the result is using distillation, val_ is in the test dataset ,and $\Delta$ mens subtract the result of distillation and without distillation.
+
 ![accuracy](https://github.com/lizhemin15/self-distillation/blob/master/acc.png)
 ![frequency](https://github.com/lizhemin15/self-distillation/blob/master/frequency.png)
 ![loss](https://github.com/lizhemin15/self-distillation/blob/master/loss.png)
+
+
